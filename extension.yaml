@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://sdk.netlify.com/sdk/config-schema.json
 config:
-  slug: fixme
+  slug: jz-awmvw-netliclicker
   name: Netliclicker
   scopes:
     site: ["read", "write"]
