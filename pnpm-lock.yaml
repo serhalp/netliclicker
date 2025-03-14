@@ -3783,7 +3783,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@stackbit/cms-git@0.4.18(@types/react@19.0.10)(graphql@16.10.0):
+  /@stackbit/cms-git@0.4.18:
     resolution: {integrity: sha512-eqRY3sC8xaJ6OrWPpRptEhe/6/0mt6TsAk0LMVsDERekzLOYQqnmsqPNFN0tIaTd9FXqPSmravW6jc6b+aAXMA==}
     dependencies:
       '@stackbit/artisanal-names': 1.0.1
@@ -3798,15 +3798,10 @@ packages:
       micromatch: 4.0.8
       slugify: 1.6.6
     transitivePeerDependencies:
-      - '@types/react'
       - bare-buffer
-      - bufferutil
-      - canvas
       - debug
       - encoding
-      - graphql
       - supports-color
-      - utf-8-validate
     dev: false
 
   /@stackbit/cms-sanity@0.2.56(@types/react@19.0.10):
@@ -3843,7 +3838,7 @@ packages:
       '@stackbit/artisanal-names': 1.0.1
       '@stackbit/cms-contentful': 0.4.56
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.10)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.0.10)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18
       '@stackbit/cms-sanity': 0.2.56(@types/react@19.0.10)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
@@ -3881,7 +3876,7 @@ packages:
     hasBin: true
     dependencies:
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.10)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.0.10)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18
       '@stackbit/dev-common': 0.5.51(@types/react@19.0.10)
       '@stackbit/sdk': 2.0.1
       axios: 0.25.0
