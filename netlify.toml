@@ -1,0 +1,9 @@
+[build]
+command = "netlify-extension build"
+publish = ".ntli/site/static"
+
+[dev]
+command = "netlify-extension dev"
+
+[[plugins]]
+package = "@netlify/netlify-plugin-netlify-extension"
