@@ -1,12 +1,12 @@
-import { useMemo, useState } from "react";
 import {
   Button,
   ButtonGroup,
   Card,
   Tooltip,
 } from "@netlify/sdk/ui/react/components";
+import { useMemo, useState } from "react";
 
-const NETLIFY_EPOCH = new Date("2014-11-09");
+const NETLIFY_EPOCH = new Date("2015-03-31");
 const SECONDS_SINCE_NETLIFY_EPOCH =
   (Date.now() - NETLIFY_EPOCH.getTime()) / 1000;
 
@@ -91,10 +91,10 @@ const ClickerButtonGroup = ({
         <Tooltip
           type="info"
           disabled={level.multiplier === 1}
-          contents={`Netlify is ${level.threshold} ${level.unit} old!`}
+          contents={<span style={{ userSelect: "none" }}>{`Netlify is ${level.threshold} ${level.unit} old!`}</span>}
         >
           <Button key={index} onClick={() => onClick(level.multiplier)}>
-            Click {level.multiplier}x
+            <span style={{ userSelect: "none" }}>Click{level.multiplier === 1 ? "" : `s +${level.multiplier}`}</span>
           </Button>
         </Tooltip>
       ))}
@@ -122,7 +122,7 @@ const ClickerButtonGroup = ({
 
 const YouWin = () => (
   <div className="tw-flex tw-flex-col tw-place-content-center">
-    <div className="tw-text-2xl tw-text-netlify-teal">You win!</div>{" "}
+    <div className="tw-text-2xl">You win!</div>{" "}
     {/* FIXME(serhalp) Tailwind animations aren't working for some reason */}
     {/* <div className="tw-animate-spin"> */}
     {/*   <NetlifyLogo /> */}
@@ -137,7 +137,7 @@ export const Game = () => {
     { threshold: 0, multiplier: 1, unit: "" },
   ]);
 
-  const hasWon = remainingLevels.length == 0;
+  const hasWon = remainingLevels.length == 1 && clickCount >= completedLevels[completedLevels.length - 1].threshold * 5;
 
   const handleClick = (count: number) => {
     setClickCount((prev) => {
@@ -157,8 +157,10 @@ export const Game = () => {
   return (
     <>
       <Card className="tw-text-center tw-text-xl">
-        Clicks:{" "}
-        <span className="tw-font-bold">{!hasWon ? clickCount : "∞"}</span>
+        <span style={{ userSelect: "none" }}>Clicks: </span>
+        <span className="tw-font-bold" style={{ userSelect: "none" }}>
+          {!hasWon ? clickCount.toLocaleString("en-US") : "∞"}
+        </span>
         {hasWon ? <YouWin /> : null}
       </Card>
       <Card>
