@@ -22,7 +22,7 @@ importers:
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@netlify/netlify-plugin-netlify-extension':
-        specifier: ^1.1.0
+        specifier: ^1.2.1
         version: 1.2.1
       '@tsconfig/node18':
         specifier: ^18.2.4
@@ -9619,7 +9619,7 @@ snapshots:
 
   '@stackbit/artisanal-names@1.0.1': {}
 
-  '@stackbit/cms-contentful@0.4.56(graphql@16.10.0)':
+  '@stackbit/cms-contentful@0.4.56':
     dependencies:
       '@contentful/rich-text-types': 15.15.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.12)(graphql@16.10.0)
@@ -9632,7 +9632,6 @@ snapshots:
       - bare-buffer
       - debug
       - encoding
-      - graphql
       - supports-color
 
   '@stackbit/cms-core@2.0.1(@types/react@19.0.12)(graphql@16.10.0)':
@@ -9669,7 +9668,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/cms-git@0.4.18(@types/react@19.0.12)(graphql@16.10.0)':
+  '@stackbit/cms-git@0.4.18':
     dependencies:
       '@stackbit/artisanal-names': 1.0.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.12)(graphql@16.10.0)
@@ -9683,17 +9682,12 @@ snapshots:
       micromatch: 4.0.8
       slugify: 1.6.6
     transitivePeerDependencies:
-      - '@types/react'
       - bare-buffer
-      - bufferutil
-      - canvas
       - debug
       - encoding
-      - graphql
       - supports-color
-      - utf-8-validate
 
-  '@stackbit/cms-sanity@0.2.56(@types/react@19.0.12)(graphql@16.10.0)':
+  '@stackbit/cms-sanity@0.2.56(@types/react@19.0.12)':
     dependencies:
       '@sanity/block-tools': 2.36.6
       '@sanity/client': 3.4.1
@@ -9715,18 +9709,17 @@ snapshots:
       - canvas
       - debug
       - encoding
-      - graphql
       - supports-color
       - utf-8-validate
 
-  '@stackbit/dev-common@0.5.51(@types/react@19.0.12)(graphql@16.10.0)':
+  '@stackbit/dev-common@0.5.51(@types/react@19.0.12)':
     dependencies:
       '@iarna/toml': 2.2.5
       '@stackbit/artisanal-names': 1.0.1
-      '@stackbit/cms-contentful': 0.4.56(graphql@16.10.0)
+      '@stackbit/cms-contentful': 0.4.56
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.12)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.0.12)(graphql@16.10.0)
-      '@stackbit/cms-sanity': 0.2.56(@types/react@19.0.12)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18
+      '@stackbit/cms-sanity': 0.2.56(@types/react@19.0.12)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -9754,15 +9747,14 @@ snapshots:
       - canvas
       - debug
       - encoding
-      - graphql
       - supports-color
       - utf-8-validate
 
   '@stackbit/dev@1.0.35(@types/react@19.0.12)(graphql@16.10.0)':
     dependencies:
       '@stackbit/cms-core': 2.0.1(@types/react@19.0.12)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.0.12)(graphql@16.10.0)
-      '@stackbit/dev-common': 0.5.51(@types/react@19.0.12)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18
+      '@stackbit/dev-common': 0.5.51(@types/react@19.0.12)
       '@stackbit/sdk': 2.0.1
       axios: 0.25.0
       chalk: 4.1.2
