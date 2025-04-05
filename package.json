@@ -16,7 +16,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@netlify/netlify-plugin-netlify-extension": "^1.1.0",
+    "@netlify/netlify-plugin-netlify-extension": "^1.2.1",
     "@tsconfig/node18": "^18.2.4",
     "@tsconfig/recommended": "^1.0.8",
     "@tsconfig/strictest": "^2.0.5",
