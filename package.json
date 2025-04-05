@@ -10,7 +10,7 @@
     "dev-connector": "netlify-extension dev --connector"
   },
   "dependencies": {
-    "@netlify/functions": "^3.0.0",
+    "@netlify/functions": "^3.0.4",
     "@netlify/sdk": "^2.24.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
