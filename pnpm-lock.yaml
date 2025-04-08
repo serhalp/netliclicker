@@ -49,8 +49,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.3)
       netlify-cli:
-        specifier: ^19.1.6
-        version: 19.1.6(@types/node@22.13.14)(picomatch@4.0.2)(rollup@4.39.0)
+        specifier: ^19.1.7
+        version: 19.1.7(@types/node@22.13.14)(picomatch@4.0.2)(rollup@4.39.0)
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
@@ -2525,6 +2525,7 @@ packages:
 
   bignumber.js@9.2.0:
     resolution: {integrity: sha512-JocpCSOixzy5XFJi2ub6IMmV/G9i8Lrm2lZvwBv9xPdglmZM0ufDVBbjbrfU/zuLvBfD7Bv2eYxz9i+OHTgkew==}
+    deprecated: pkg version number incorrect
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -5279,8 +5280,8 @@ packages:
   nested-error-stacks@2.1.1:
     resolution: {integrity: sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==}
 
-  netlify-cli@19.1.6:
-    resolution: {integrity: sha512-Z3FUnz1mGHV6rrxBS2fEeNl2uvs3qnXOa4292jMNGqDewLTiu++TWZuLq7x5mMZj/zTqu95W44GxaSpmQDiGYg==}
+  netlify-cli@19.1.7:
+    resolution: {integrity: sha512-1L5DVUDnJgCz445p4C+syYEZ15RrsJ9QAEoonZaPWk5ZVuG/ueDn6C8rYXCjogJL2W6vtrZy2CnKijI8Z6e0kg==}
     engines: {node: '>=18.14.0'}
     hasBin: true
 
@@ -13562,7 +13563,7 @@ snapshots:
 
   nested-error-stacks@2.1.1: {}
 
-  netlify-cli@19.1.6(@types/node@22.13.14)(picomatch@4.0.2)(rollup@4.39.0):
+  netlify-cli@19.1.7(@types/node@22.13.14)(picomatch@4.0.2)(rollup@4.39.0):
     dependencies:
       '@fastify/static': 7.0.4
       '@netlify/blobs': 8.1.2
