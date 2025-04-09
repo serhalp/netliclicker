@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.4
         version: 3.0.4
       '@netlify/sdk':
-        specifier: ^2.25.3
-        version: 2.25.3(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+        specifier: ^2.25.4
+        version: 2.25.4(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -1221,8 +1221,8 @@ packages:
     resolution: {integrity: sha512-FQegi441w8KLJO+QhU3QJWa8vlYI7HfioPwBkTKOnLpImun+L/2wcVCHaPWLgyV5o6LGwGPedXxXNgWebRiI+w==}
     engines: {node: '>=16.0.0'}
 
-  '@netlify/content-engine@1.8.1':
-    resolution: {integrity: sha512-pzpJKAxQ2T2KYCYmi/CnBqeec6ca9lyzOb1f2k1WpBDCsn5uIv5a/gWiyK5UmRvE6v9JhNjGZdoQoFdwRktxeA==}
+  '@netlify/content-engine@1.9.0':
+    resolution: {integrity: sha512-dcq0d0Ymc5ZZfrafGTfQC15Wn99WR5Z2/B4VJSrzuOO47osptsYNY/Ofr9jHJNosayzpLMGzwURzXj7E0HgUkw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@google-cloud/storage': ^5.8.4
@@ -1391,8 +1391,8 @@ packages:
     peerDependencies:
       '@trpc/server': '>= 11 || >= 11.0.0-rc.0'
 
-  '@netlify/sdk--ui-react@1.21.10':
-    resolution: {integrity: sha512-bq4/Dko6flHL/rOY12Bq/VfZ0/Lu86rpI7tSoRHMyinyOCeCwhRs4Cr+XSjGYKVj5cXfBxk4TtiQ50EpdeiTgg==}
+  '@netlify/sdk--ui-react@1.21.11':
+    resolution: {integrity: sha512-3itABya+K7KBfGGImWimaRAAEx7UOUt9Ku7N1qorljQBRhQERtLR17pzK+Vri2b3IVzTruUCUoxSJCyz+JDkTw==}
     peerDependencies:
       autoprefixer: ^10.4.19
       postcss: ^8.4.38
@@ -1404,8 +1404,8 @@ packages:
     resolution: {integrity: sha512-ogDibdluTkqLtKBVWye6tzh3D9GJ3jfHe7IhnbMYc1HlNiLz7QqOrLpVyqm8pOvXW5PZfJ11JPyTcs69/yTztQ==}
     hasBin: true
 
-  '@netlify/sdk@2.25.3':
-    resolution: {integrity: sha512-MFOlN6NCEb3nWqZ4WrX/5xARqHW1zomVhVkEJrJtg1Q9wayPP1OHHZ/5PFcJtLWk4fnsktLNwJj3O52sQYmAVw==}
+  '@netlify/sdk@2.25.4':
+    resolution: {integrity: sha512-wkz6V9Pphc/ILZR7LXQMgIdkbm90VqJTHDDfZSFLOYg4DNgiRgnNhgcmgowxF4HS/LoBftiMGg9pnAYoAANy9w==}
     engines: {node: '>= 18.19.0'}
     hasBin: true
 
@@ -1417,8 +1417,8 @@ packages:
     resolution: {integrity: sha512-z6okREyK8in0486a22Oro0k+YsuyEjDXJt46FpgeOgXqKJ9ElM8QPll0iuLBkpbH33ENiNbIPLd1cuClRQnhiw==}
     engines: {node: '>=18.0.0'}
 
-  '@netlify/tailwind-config@2.0.0':
-    resolution: {integrity: sha512-WjOAFWHe/B9+y5vV9Up1kUL+FCave66DJBYRXxqX8XRA5+0QSKoSs1u8g2RdADIMH4p9qAELAzqX1tWAwl9REQ==}
+  '@netlify/tailwind-config@2.1.0':
+    resolution: {integrity: sha512-szc+wQjsG7NqWasjEzUe8+OKv/1w6FOEFkMAwTD7+JC6UuVFReop+dhoFERWUrm6xEKl5ug/dVjWiPTsu9A0Ng==}
 
   '@netlify/ui@0.0.20':
     resolution: {integrity: sha512-Z66gmuwEY+JkpEI4ICbzrqnDETYi8A+uKk0pkswlmzbFgVmmZ2GaST13oMzNcrLx5+nTyCqf52o7YaJhRchneg==}
@@ -8419,7 +8419,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@netlify/content-engine@1.8.1(@google-cloud/storage@5.20.5)':
+  '@netlify/content-engine@1.9.0(@google-cloud/storage@5.20.5)':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/types': 7.27.0
@@ -8715,13 +8715,13 @@ snapshots:
       '@trpc/server': 11.0.1(typescript@5.8.3)
       zod: 3.24.2
 
-  '@netlify/sdk--ui-react@1.21.10(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk--ui-react@1.21.11(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@fullstory/browser': 2.0.6
       '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.1.0))
       '@netlify/netlify-design-tokens': 7.0.0
       '@netlify/sdk--ui-core': 1.14.0
-      '@netlify/tailwind-config': 2.0.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/tailwind-config': 2.1.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@netlify/ui': 0.0.20(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@react-hook/resize-observer': 2.0.2(react@19.1.0)
       autoprefixer: 10.4.21(postcss@8.5.3)
@@ -8791,19 +8791,19 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@netlify/sdk@2.25.3(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk@2.25.4(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@graphql-tools/stitch': 9.4.21(graphql@16.10.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
       '@graphql-tools/wrap': 10.0.34(graphql@16.10.0)
-      '@netlify/content-engine': 1.8.1(@google-cloud/storage@5.20.5)
+      '@netlify/content-engine': 1.9.0(@google-cloud/storage@5.20.5)
       '@netlify/functions': 3.0.4
       '@netlify/integrations': 0.6.0
       '@netlify/sdk--extension-api-client': 2.12.1
       '@netlify/sdk--ui-core': 1.14.0
       '@netlify/sdk--ui-functions': 1.9.3(@trpc/server@11.0.1(typescript@5.8.3))
-      '@netlify/sdk--ui-react': 1.21.10(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/sdk--ui-react': 1.21.11(@types/react@19.1.0)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@sindresorhus/slugify': 2.2.1
       '@stackbit/dev': 1.0.35(@types/react@19.1.0)(graphql@16.10.0)
       '@types/configstore': 6.0.2
@@ -8857,9 +8857,9 @@ snapshots:
 
   '@netlify/serverless-functions-api@1.36.0': {}
 
-  '@netlify/tailwind-config@2.0.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/tailwind-config@2.1.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
-      '@netlify/netlify-design-tokens': 6.0.0
+      '@netlify/netlify-design-tokens': 7.0.0
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
     transitivePeerDependencies:
@@ -8868,7 +8868,7 @@ snapshots:
   '@netlify/ui@0.0.20(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@netlify/netlify-design-tokens': 6.0.0
-      '@netlify/tailwind-config': 2.0.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/tailwind-config': 2.1.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@tippyjs/react': 4.2.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       clsx: 2.1.1
       downshift: 9.0.9(react@19.1.0)
@@ -9391,7 +9391,7 @@ snapshots:
 
   '@stackbit/artisanal-names@1.0.1': {}
 
-  '@stackbit/cms-contentful@0.4.56':
+  '@stackbit/cms-contentful@0.4.56(graphql@16.10.0)':
     dependencies:
       '@contentful/rich-text-types': 15.15.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
@@ -9404,6 +9404,7 @@ snapshots:
       - bare-buffer
       - debug
       - encoding
+      - graphql
       - supports-color
 
   '@stackbit/cms-core@2.0.1(@types/react@19.1.0)(graphql@16.10.0)':
@@ -9440,7 +9441,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/cms-git@0.4.18':
+  '@stackbit/cms-git@0.4.18(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@stackbit/artisanal-names': 1.0.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
@@ -9454,12 +9455,17 @@ snapshots:
       micromatch: 4.0.8
       slugify: 1.6.6
     transitivePeerDependencies:
+      - '@types/react'
       - bare-buffer
+      - bufferutil
+      - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
+      - utf-8-validate
 
-  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.0)':
+  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@sanity/block-tools': 2.36.6
       '@sanity/client': 3.4.1
@@ -9481,17 +9487,18 @@ snapshots:
       - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
       - utf-8-validate
 
-  '@stackbit/dev-common@0.5.51(@types/react@19.1.0)':
+  '@stackbit/dev-common@0.5.51(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@iarna/toml': 2.2.5
       '@stackbit/artisanal-names': 1.0.1
-      '@stackbit/cms-contentful': 0.4.56
+      '@stackbit/cms-contentful': 0.4.56(graphql@16.10.0)
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18
-      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.0)(graphql@16.10.0)
+      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.0)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -9519,14 +9526,15 @@ snapshots:
       - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
       - utf-8-validate
 
   '@stackbit/dev@1.0.35(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18
-      '@stackbit/dev-common': 0.5.51(@types/react@19.1.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.0)(graphql@16.10.0)
+      '@stackbit/dev-common': 0.5.51(@types/react@19.1.0)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       axios: 0.25.0
       chalk: 4.1.2
