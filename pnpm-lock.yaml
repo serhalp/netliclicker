@@ -22,8 +22,8 @@ importers:
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@netlify/netlify-plugin-netlify-extension':
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^1.2.2
+        version: 1.2.2
       '@tsconfig/node18':
         specifier: ^18.2.4
         version: 18.2.4
@@ -1348,8 +1348,8 @@ packages:
   '@netlify/netlify-design-tokens@7.0.0':
     resolution: {integrity: sha512-9Mk+x6WOkyMmqyuzZgQkaX9QJ285HOsJPH4wZSpNHKNxlVeDzS7KNfJOPMYvAd4AWCNdsYwffq6jkUFRthevsw==}
 
-  '@netlify/netlify-plugin-netlify-extension@1.2.1':
-    resolution: {integrity: sha512-yERCYNPgkOcGsMb/6EwV7IVldAO9ShmPc0uWScQ+HUF9T66s4ZO6LQ+gFwIF55IWeqHCtQK5Hrlnws9BrNHZ1g==}
+  '@netlify/netlify-plugin-netlify-extension@1.2.2':
+    resolution: {integrity: sha512-SPzjSNBdb272tb89AwRKoL07eY91JY/hB2Px2ZRdAXQKUwQEe+yfZyYiepDwbB1On/H0kVhRHQY1D0Q2y2Xrug==}
 
   '@netlify/node-cookies@0.1.0':
     resolution: {integrity: sha512-OAs1xG+FfLX0LoRASpqzVntVV/RpYkgpI0VrUnw2u0Q1qiZUzcPffxRK8HF3gc4GjuhG5ahOEMJ9bswBiZPq0g==}
@@ -8659,7 +8659,7 @@ snapshots:
 
   '@netlify/netlify-design-tokens@7.0.0': {}
 
-  '@netlify/netlify-plugin-netlify-extension@1.2.1':
+  '@netlify/netlify-plugin-netlify-extension@1.2.2':
     dependencies:
       moize: 6.1.6
       outdent: 0.8.0
@@ -9391,7 +9391,7 @@ snapshots:
 
   '@stackbit/artisanal-names@1.0.1': {}
 
-  '@stackbit/cms-contentful@0.4.56':
+  '@stackbit/cms-contentful@0.4.56(graphql@16.10.0)':
     dependencies:
       '@contentful/rich-text-types': 15.15.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
@@ -9404,6 +9404,7 @@ snapshots:
       - bare-buffer
       - debug
       - encoding
+      - graphql
       - supports-color
 
   '@stackbit/cms-core@2.0.1(@types/react@19.1.0)(graphql@16.10.0)':
@@ -9440,7 +9441,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/cms-git@0.4.18':
+  '@stackbit/cms-git@0.4.18(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@stackbit/artisanal-names': 1.0.1
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
@@ -9454,12 +9455,17 @@ snapshots:
       micromatch: 4.0.8
       slugify: 1.6.6
     transitivePeerDependencies:
+      - '@types/react'
       - bare-buffer
+      - bufferutil
+      - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
+      - utf-8-validate
 
-  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.0)':
+  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@sanity/block-tools': 2.36.6
       '@sanity/client': 3.4.1
@@ -9481,17 +9487,18 @@ snapshots:
       - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
       - utf-8-validate
 
-  '@stackbit/dev-common@0.5.51(@types/react@19.1.0)':
+  '@stackbit/dev-common@0.5.51(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@iarna/toml': 2.2.5
       '@stackbit/artisanal-names': 1.0.1
-      '@stackbit/cms-contentful': 0.4.56
+      '@stackbit/cms-contentful': 0.4.56(graphql@16.10.0)
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18
-      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.0)(graphql@16.10.0)
+      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.0)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -9519,14 +9526,15 @@ snapshots:
       - canvas
       - debug
       - encoding
+      - graphql
       - supports-color
       - utf-8-validate
 
   '@stackbit/dev@1.0.35(@types/react@19.1.0)(graphql@16.10.0)':
     dependencies:
       '@stackbit/cms-core': 2.0.1(@types/react@19.1.0)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18
-      '@stackbit/dev-common': 0.5.51(@types/react@19.1.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.0)(graphql@16.10.0)
+      '@stackbit/dev-common': 0.5.51(@types/react@19.1.0)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       axios: 0.25.0
       chalk: 4.1.2
