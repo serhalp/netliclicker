@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@netlify/functions':
-        specifier: ^3.1.3
-        version: 3.1.3(rollup@4.40.1)
+        specifier: ^3.1.5
+        version: 3.1.5(rollup@4.40.1)
       '@netlify/sdk':
         specifier: ^2.25.4
         version: 2.25.4(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.2)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
@@ -1341,8 +1341,8 @@ packages:
     resolution: {integrity: sha512-9djLZHBKsoKk8XCgwWSEPK9QnT8qqxEQGuYh48gFIcNLvpBKkLnHbDZuyUxmNemCfDz7h0HnMXgSPnnUVgARhg==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
-  '@netlify/blobs@9.0.0':
-    resolution: {integrity: sha512-NqhdBxNVnwbmW9ysyDIqSbbi8IbMCDTxgMrfmwM11yILyf3Jbpo0sDq7vutuvm3eNLGYIiaWch6ZX8w7uupEqA==}
+  '@netlify/blobs@9.0.1':
+    resolution: {integrity: sha512-l2d7KCAvekDpIBMQjUuOpOgolhMWt9Bll7G/KH/zmW/3gFlTB2mD5/2ghSjCTxLGJzdjbch7/5EBt8UPSDlD3A==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
   '@netlify/build-info@9.0.2':
@@ -1388,8 +1388,8 @@ packages:
     peerDependencies:
       '@google-cloud/storage': ^5.8.4
 
-  '@netlify/dev-utils@2.0.0':
-    resolution: {integrity: sha512-UApDeHAJXbtWK7yv3i35/AprPmaCqwM6M0oGPeV1Hs9wRWcIRbANSZV34l7NcKf+jCvAXHHaP0NLFJKregNvBQ==}
+  '@netlify/dev-utils@2.1.0':
+    resolution: {integrity: sha512-GZ3cVSkipJ+shHQ0yudqqgH5/PW8g98Ou8CckLDKDVi7FREnaWQocJIomfxk0cPWqkg9Iq3DLLV9LOoioCOlAg==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
   '@netlify/edge-bundler@12.4.0':
@@ -1415,8 +1415,8 @@ packages:
     resolution: {integrity: sha512-DeoAQh8LuNPvBE4qsKlezjKj0PyXDryOFJfJKo3Z1qZLKzQ21sT314KQKPVjfvw6knqijj+IO+0kHXy/TJiqNA==}
     engines: {node: '>=14.0.0'}
 
-  '@netlify/functions@3.1.3':
-    resolution: {integrity: sha512-RrPdf/4jEhXwd74giIoTZiXm2jCJoHvXRGeLjJLBKNtCW2OvypMiKyWWREbKioIm1qCPMpHG8n7s3JmUNW05SQ==}
+  '@netlify/functions@3.1.5':
+    resolution: {integrity: sha512-HQtKIY+O1gJf+UFk9nHm62ai9fYxF9F4Aaq8zJdMfPhZaSsslS/PH8rEE51bkLi3u63GM8LdaxU1JyCKmT4mGg==}
     engines: {node: '>=14.0.0'}
 
   '@netlify/git-utils@5.2.0':
@@ -1542,8 +1542,8 @@ packages:
     resolution: {integrity: sha512-bsrv7Sjge5g71VMgZ65Ioc5q4lHXdLQCmpUU6sY06Aeol1psi1iDOGVMx/7ExJjbCtQgxye35wZjAz60i6X22Q==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
-  '@netlify/runtime-utils@1.1.0':
-    resolution: {integrity: sha512-S6GmCycoRTnlbn9OuzNAP1/V755DKm0OuBspaoUxbnXbW50hwVMTf+HdzqLA+o4BsC32it8OrRFaafeHJx9zwg==}
+  '@netlify/runtime-utils@1.2.0':
+    resolution: {integrity: sha512-iTWkuINC7O8AqthMzbF9/OAnz3ubVPn8ycSD5ZO7vtnlaQiYu/L8mZ7Nez1eZu4WxWgpNBwS79YgAK6x0RBWUQ==}
     engines: {node: '>=16.0.0'}
 
   '@netlify/sdk--extension-api-client@0.1.1':
@@ -1580,10 +1580,6 @@ packages:
 
   '@netlify/serverless-functions-api@1.26.1':
     resolution: {integrity: sha512-q3L9i3HoNfz0SGpTIS4zTcKBbRkxzCRpd169eyiTuk3IwcPC3/85mzLHranlKo2b+HYT0gu37YxGB45aD8A3Tw==}
-    engines: {node: '>=18.0.0'}
-
-  '@netlify/serverless-functions-api@1.36.0':
-    resolution: {integrity: sha512-z6okREyK8in0486a22Oro0k+YsuyEjDXJt46FpgeOgXqKJ9ElM8QPll0iuLBkpbH33ENiNbIPLd1cuClRQnhiw==}
     engines: {node: '>=18.0.0'}
 
   '@netlify/serverless-functions-api@1.38.0':
@@ -8528,10 +8524,10 @@ snapshots:
 
   '@netlify/blobs@8.2.0': {}
 
-  '@netlify/blobs@9.0.0':
+  '@netlify/blobs@9.0.1':
     dependencies:
-      '@netlify/dev-utils': 2.0.0
-      '@netlify/runtime-utils': 1.1.0
+      '@netlify/dev-utils': 2.1.0
+      '@netlify/runtime-utils': 1.2.0
 
   '@netlify/build-info@9.0.2':
     dependencies:
@@ -8847,7 +8843,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@netlify/dev-utils@2.0.0':
+  '@netlify/dev-utils@2.1.0':
     dependencies:
       '@whatwg-node/server': 0.9.71
       chokidar: 4.0.3
@@ -8857,6 +8853,7 @@ snapshots:
       find-up: 7.0.0
       lodash.debounce: 4.0.8
       netlify: 13.3.4
+      parse-gitignore: 2.0.0
       uuid: 11.1.0
       write-file-atomic: 6.0.0
 
@@ -8921,10 +8918,10 @@ snapshots:
     dependencies:
       '@netlify/serverless-functions-api': 1.26.1
 
-  '@netlify/functions@3.1.3(rollup@4.40.1)':
+  '@netlify/functions@3.1.5(rollup@4.40.1)':
     dependencies:
-      '@netlify/blobs': 9.0.0
-      '@netlify/dev-utils': 2.0.0
+      '@netlify/blobs': 9.0.1
+      '@netlify/dev-utils': 2.1.0
       '@netlify/serverless-functions-api': 1.38.0
       '@netlify/zip-it-and-ship-it': 10.0.7(rollup@4.40.1)
       cron-parser: 4.9.0
@@ -9047,7 +9044,7 @@ snapshots:
     dependencies:
       execa: 6.1.0
 
-  '@netlify/runtime-utils@1.1.0': {}
+  '@netlify/runtime-utils@1.2.0': {}
 
   '@netlify/sdk--extension-api-client@0.1.1':
     dependencies:
@@ -9071,7 +9068,7 @@ snapshots:
 
   '@netlify/sdk--ui-functions@1.9.3(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)':
     dependencies:
-      '@netlify/functions': 3.1.3(rollup@4.40.1)
+      '@netlify/functions': 3.1.5(rollup@4.40.1)
       '@netlify/sdk--extension-api-client': 2.12.1
       '@trpc/server': 11.0.1(typescript@5.8.3)
       zod: 3.24.2
@@ -9163,7 +9160,7 @@ snapshots:
       '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
       '@graphql-tools/wrap': 10.0.34(graphql@16.10.0)
       '@netlify/content-engine': 1.9.0(@google-cloud/storage@5.20.5)
-      '@netlify/functions': 3.1.3(rollup@4.40.1)
+      '@netlify/functions': 3.1.5(rollup@4.40.1)
       '@netlify/integrations': 0.6.0
       '@netlify/sdk--extension-api-client': 2.12.1
       '@netlify/sdk--ui-core': 1.14.0
@@ -9221,8 +9218,6 @@ snapshots:
       '@netlify/node-cookies': 0.1.0
       urlpattern-polyfill: 8.0.2
 
-  '@netlify/serverless-functions-api@1.36.0': {}
-
   '@netlify/serverless-functions-api@1.38.0': {}
 
   '@netlify/tailwind-config@2.1.0(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
@@ -9254,7 +9249,7 @@ snapshots:
       '@babel/parser': 7.27.0
       '@babel/types': 7.26.10
       '@netlify/binary-info': 1.0.0
-      '@netlify/serverless-functions-api': 1.36.0
+      '@netlify/serverless-functions-api': 1.38.0
       '@vercel/nft': 0.27.7(rollup@4.40.1)(supports-color@9.4.0)
       archiver: 7.0.1
       common-path-prefix: 3.0.0
