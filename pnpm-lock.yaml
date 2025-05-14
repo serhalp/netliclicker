@@ -12,8 +12,8 @@ importers:
         specifier: ^3.1.8
         version: 3.1.8(rollup@4.40.1)
       '@netlify/sdk':
-        specifier: ^2.26.0
-        version: 2.26.0(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+        specifier: ^2.26.1
+        version: 2.26.1(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -1562,19 +1562,19 @@ packages:
   '@netlify/sdk--extension-api-client@0.1.1':
     resolution: {integrity: sha512-gl4K9VJg0+MLBZCAjfKvySXs1Dv5l/Y5YEXsFQZIJIgHKCmPiNOEz8SLzF7YgRNqlgIapjcBu52kif82J5HUpA==}
 
-  '@netlify/sdk--extension-api-client@2.12.2':
-    resolution: {integrity: sha512-kixweo77M3BiBbeQWNP5nOOK5DthL5wy/ddP7kqRmr++rwPxJuLjzIieAxwwGQe8x2iRHaR8TY4aSvNgYQxNfQ==}
+  '@netlify/sdk--extension-api-client@2.12.3':
+    resolution: {integrity: sha512-YWQBVpsJ33AZDOmcJ+N7I1CDCMMMCDJUNA5YOWf9VFfIVIejfq8kSRpuossUCXR45DxlWhLx1kNAiQVE5MiH0w==}
 
   '@netlify/sdk--ui-core@1.14.0':
     resolution: {integrity: sha512-jCvgK2wGdaMr+qM8Apo8ANbDrYslF7Crk//PZObFydfHz7Vp9f0wOLlu8al97WH25NiUrJK49AaLAXa0e1IY/g==}
 
-  '@netlify/sdk--ui-functions@1.9.4':
-    resolution: {integrity: sha512-xRSWU4WvcwfNX+C3JP8WrSdYSMvdTX09kwGMlRngYSTWT5gifMYKECbxOiTGzuUe17La7DY6uYuonhOqlqVddg==}
+  '@netlify/sdk--ui-functions@1.9.5':
+    resolution: {integrity: sha512-Xe/EBEqHhMg8SsqTyGLfPLshnCuMU1orAHi1kOXTq/BPETTLVh1KA2GWPcF4senC/E+njlhUUO136aPdgVCelw==}
     peerDependencies:
       '@trpc/server': '>= 11 || >= 11.0.0-rc.0'
 
-  '@netlify/sdk--ui-react@1.22.0':
-    resolution: {integrity: sha512-zVBT/tYKRV0TxLFmuSXZ7LKO0R9ZN9OhnGBPQlG/iTfxRMltSxdd7cyv5pEO9uEFGHAP2WalvtPcb3nUNgi/Jg==}
+  '@netlify/sdk--ui-react@1.22.1':
+    resolution: {integrity: sha512-TBzRDHrO1OY9QTUvRqW6ssG08IopEQSo8VFaPu/lY5Puhi9BXXGUOVb5hkAB1qQrb115UfQ5FFNS8ErZuLxh/g==}
     peerDependencies:
       autoprefixer: ^10.4.19
       postcss: ^8.4.38
@@ -1586,8 +1586,8 @@ packages:
     resolution: {integrity: sha512-ogDibdluTkqLtKBVWye6tzh3D9GJ3jfHe7IhnbMYc1HlNiLz7QqOrLpVyqm8pOvXW5PZfJ11JPyTcs69/yTztQ==}
     hasBin: true
 
-  '@netlify/sdk@2.26.0':
-    resolution: {integrity: sha512-qwLbnpPrwh8ecd8Qgp0yydnIoZv95ISh/93m0MdJzORSnoU8v0eZWOcrvar5yq8M5TF6K/B1HY6KROeir6zKjQ==}
+  '@netlify/sdk@2.26.1':
+    resolution: {integrity: sha512-0fkiakrbGnrqlPyNoAJ7Zbhx25hBQwNbgqes4nHPGBjJZgu0yE2K8L2NuIfRAcNJp9VvbIwsMnSnRWWbj3S2AQ==}
     engines: {node: '>= 18.19.0'}
     hasBin: true
 
@@ -9092,7 +9092,7 @@ snapshots:
       wretch: 2.11.0
       zod: 3.24.2
 
-  '@netlify/sdk--extension-api-client@2.12.2':
+  '@netlify/sdk--extension-api-client@2.12.3':
     dependencies:
       '@netlify/blobs': 8.2.0
       camelize-ts: 3.0.0
@@ -9107,10 +9107,10 @@ snapshots:
       iter-tools-es: 7.5.3
       zod: 3.24.2
 
-  '@netlify/sdk--ui-functions@1.9.4(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)':
+  '@netlify/sdk--ui-functions@1.9.5(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)':
     dependencies:
       '@netlify/functions': 3.1.8(rollup@4.40.1)
-      '@netlify/sdk--extension-api-client': 2.12.2
+      '@netlify/sdk--extension-api-client': 2.12.3
       '@trpc/server': 11.0.1(typescript@5.8.3)
       zod: 3.24.2
     transitivePeerDependencies:
@@ -9118,7 +9118,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@netlify/sdk--ui-react@1.22.0(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk--ui-react@1.22.1(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@fullstory/browser': 2.0.6
       '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.1.0))
@@ -9194,7 +9194,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@netlify/sdk@2.26.0(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk@2.26.1(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@graphql-tools/stitch': 9.4.21(graphql@16.10.0)
@@ -9203,10 +9203,10 @@ snapshots:
       '@netlify/content-engine': 1.9.0(@google-cloud/storage@5.20.5)
       '@netlify/functions': 3.1.8(rollup@4.40.1)
       '@netlify/integrations': 0.6.0
-      '@netlify/sdk--extension-api-client': 2.12.2
+      '@netlify/sdk--extension-api-client': 2.12.3
       '@netlify/sdk--ui-core': 1.14.0
-      '@netlify/sdk--ui-functions': 1.9.4(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)
-      '@netlify/sdk--ui-react': 1.22.0(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/sdk--ui-functions': 1.9.5(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)
+      '@netlify/sdk--ui-react': 1.22.1(@types/react@19.1.3)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@sindresorhus/slugify': 2.2.1
       '@stackbit/dev': 1.0.35(@types/react@19.1.3)(graphql@16.10.0)
       '@types/configstore': 6.0.2

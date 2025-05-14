@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^3.1.8",
-    "@netlify/sdk": "^2.26.0",
+    "@netlify/sdk": "^2.26.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
