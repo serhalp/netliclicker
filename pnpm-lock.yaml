@@ -13,7 +13,7 @@ importers:
         version: 3.1.10(rollup@4.40.1)
       '@netlify/sdk':
         specifier: ^2.26.2
-        version: 2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.6)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+        version: 2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -38,10 +38,10 @@ importers:
         version: 3.4.0
       '@types/react':
         specifier: ^19.0.10
-        version: 19.1.6
+        version: 19.1.8
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.1.5(@types/react@19.1.6)
+        version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
         version: 4.5.2(vite@6.3.5(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.7.0))
@@ -2299,8 +2299,8 @@ packages:
   '@types/prop-types@15.7.14':
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
 
-  '@types/react-dom@19.1.5':
-    resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
+  '@types/react-dom@19.1.6':
+    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
       '@types/react': ^19.0.0
 
@@ -2312,8 +2312,8 @@ packages:
   '@types/react@17.0.87':
     resolution: {integrity: sha512-wpg9AbtJ6agjA+BKYmhG6dRWEU/2DHYwMzCaBzsz137ft6IyuqZ5fI4ic1DWL4DrI03Zy78IyVE6ucrXl0mu4g==}
 
-  '@types/react@19.1.6':
-    resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
+  '@types/react@19.1.8':
+    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -6311,6 +6311,9 @@ packages:
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
 
+  pump@3.0.3:
+    resolution: {integrity: sha512-todwxLMY7/heScKmntwQG8CXVkWUOdYxIvY2s0VWAAMh/nd8SoYiRaKjlr7+iCs984f2P8zvrfWcDDYVb73NfA==}
+
   pumpify@2.0.1:
     resolution: {integrity: sha512-m7KOje7jZxrmutanlkS1daj1dS6z6BgslzOXmcSEpIlCxM3VJH7lG5QLeck/6hgF6F4crFf01UtQmNsJfweTAw==}
 
@@ -7977,7 +7980,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@19.1.6)(react@19.1.0)':
+  '@emotion/react@11.14.0(@types/react@19.1.8)(react@19.1.0)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@emotion/babel-plugin': 11.13.5
@@ -7989,7 +7992,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.1.0
     optionalDependencies:
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
     transitivePeerDependencies:
       - supports-color
 
@@ -9303,7 +9306,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@netlify/sdk--ui-react@1.22.2(@types/react@19.1.6)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk--ui-react@1.22.2(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@fullstory/browser': 2.0.6
       '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.1.0))
@@ -9320,7 +9323,7 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-hook-form: 7.54.2(react@19.1.0)
-      react-select: 5.10.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-select: 5.10.1(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       shiki: 1.29.2
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       zod: 3.24.2
@@ -9329,7 +9332,7 @@ snapshots:
       - supports-color
       - ts-node
 
-  '@netlify/sdk@1.67.0(@types/react@19.1.6)(graphql@16.10.0)':
+  '@netlify/sdk@1.67.0(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@graphql-tools/stitch': 9.4.21(graphql@16.10.0)
@@ -9340,7 +9343,7 @@ snapshots:
       '@netlify/integrations': 0.6.0
       '@netlify/sdk--extension-api-client': 0.1.1
       '@sindresorhus/slugify': 2.2.1
-      '@stackbit/dev': 1.0.35(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/dev': 1.0.35(@types/react@19.1.8)(graphql@16.10.0)
       '@types/configstore': 6.0.2
       camelcase: 8.0.0
       chalk: 5.4.1
@@ -9379,7 +9382,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@netlify/sdk@2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.6)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk@2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@graphql-tools/stitch': 9.4.21(graphql@16.10.0)
@@ -9391,9 +9394,9 @@ snapshots:
       '@netlify/sdk--extension-api-client': 2.12.4
       '@netlify/sdk--ui-core': 1.14.0
       '@netlify/sdk--ui-functions': 1.9.6(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)
-      '@netlify/sdk--ui-react': 1.22.2(@types/react@19.1.6)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/sdk--ui-react': 1.22.2(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@sindresorhus/slugify': 2.2.1
-      '@stackbit/dev': 1.0.35(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/dev': 1.0.35(@types/react@19.1.8)(graphql@16.10.0)
       '@types/configstore': 6.0.2
       camelcase: 8.0.0
       chalk: 5.4.1
@@ -9954,10 +9957,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sanity/types@3.81.0(@types/react@19.1.6)':
+  '@sanity/types@3.81.0(@types/react@19.1.8)':
     dependencies:
       '@sanity/client': 6.28.4
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
     transitivePeerDependencies:
       - debug
 
@@ -10028,7 +10031,7 @@ snapshots:
   '@stackbit/cms-contentful@0.4.56(graphql@16.10.0)':
     dependencies:
       '@contentful/rich-text-types': 15.15.1
-      '@stackbit/cms-core': 2.0.1(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/cms-core': 2.0.1(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
       contentful: 9.3.7
@@ -10041,12 +10044,12 @@ snapshots:
       - graphql
       - supports-color
 
-  '@stackbit/cms-core@2.0.1(@types/react@19.1.6)(graphql@16.10.0)':
+  '@stackbit/cms-core@2.0.1(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
       '@babel/parser': 7.27.5
       '@babel/traverse': 7.27.4
       '@iarna/toml': 2.2.5
-      '@netlify/sdk': 1.67.0(@types/react@19.1.6)(graphql@16.10.0)
+      '@netlify/sdk': 1.67.0(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -10075,10 +10078,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/cms-git@0.4.18(@types/react@19.1.6)(graphql@16.10.0)':
+  '@stackbit/cms-git@0.4.18(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
       '@stackbit/artisanal-names': 1.0.1
-      '@stackbit/cms-core': 2.0.1(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/cms-core': 2.0.1(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -10099,13 +10102,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.6)(graphql@16.10.0)':
+  '@stackbit/cms-sanity@0.2.56(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
       '@sanity/block-tools': 2.36.6
       '@sanity/client': 3.4.1
       '@sanity/schema': 2.36.6
-      '@sanity/types': 3.81.0(@types/react@19.1.6)
-      '@stackbit/cms-core': 2.0.1(@types/react@19.1.6)(graphql@16.10.0)
+      '@sanity/types': 3.81.0(@types/react@19.1.8)
+      '@stackbit/cms-core': 2.0.1(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
       fs-extra: 9.1.0
@@ -10125,14 +10128,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/dev-common@0.5.51(@types/react@19.1.6)(graphql@16.10.0)':
+  '@stackbit/dev-common@0.5.51(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
       '@iarna/toml': 2.2.5
       '@stackbit/artisanal-names': 1.0.1
       '@stackbit/cms-contentful': 0.4.56(graphql@16.10.0)
-      '@stackbit/cms-core': 2.0.1(@types/react@19.1.6)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.1.6)(graphql@16.10.0)
-      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/cms-core': 2.0.1(@types/react@19.1.8)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.8)(graphql@16.10.0)
+      '@stackbit/cms-sanity': 0.2.56(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       '@stackbit/types': 1.0.1
       '@stackbit/utils': 0.4.19
@@ -10164,11 +10167,11 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@stackbit/dev@1.0.35(@types/react@19.1.6)(graphql@16.10.0)':
+  '@stackbit/dev@1.0.35(@types/react@19.1.8)(graphql@16.10.0)':
     dependencies:
-      '@stackbit/cms-core': 2.0.1(@types/react@19.1.6)(graphql@16.10.0)
-      '@stackbit/cms-git': 0.4.18(@types/react@19.1.6)(graphql@16.10.0)
-      '@stackbit/dev-common': 0.5.51(@types/react@19.1.6)(graphql@16.10.0)
+      '@stackbit/cms-core': 2.0.1(@types/react@19.1.8)(graphql@16.10.0)
+      '@stackbit/cms-git': 0.4.18(@types/react@19.1.8)(graphql@16.10.0)
+      '@stackbit/dev-common': 0.5.51(@types/react@19.1.8)(graphql@16.10.0)
       '@stackbit/sdk': 2.0.1
       axios: 0.25.0
       chalk: 4.1.2
@@ -10397,13 +10400,13 @@ snapshots:
 
   '@types/prop-types@15.7.14': {}
 
-  '@types/react-dom@19.1.5(@types/react@19.1.6)':
+  '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
 
-  '@types/react-transition-group@4.4.12(@types/react@19.1.6)':
+  '@types/react-transition-group@4.4.12(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
 
   '@types/react@17.0.87':
     dependencies:
@@ -10411,7 +10414,7 @@ snapshots:
       '@types/scheduler': 0.16.8
       csstype: 3.1.3
 
-  '@types/react@19.1.6':
+  '@types/react@19.1.8':
     dependencies:
       csstype: 3.1.3
 
@@ -15222,11 +15225,16 @@ snapshots:
       end-of-stream: 1.4.4
       once: 1.4.0
 
+  pump@3.0.3:
+    dependencies:
+      end-of-stream: 1.4.4
+      once: 1.4.0
+
   pumpify@2.0.1:
     dependencies:
       duplexify: 4.1.3
       inherits: 2.0.4
-      pump: 3.0.2
+      pump: 3.0.3
 
   punycode@1.4.1: {}
 
@@ -15298,19 +15306,19 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-select@5.10.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-select@5.10.1(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.27.0
       '@emotion/cache': 11.14.0
-      '@emotion/react': 11.14.0(@types/react@19.1.6)(react@19.1.0)
+      '@emotion/react': 11.14.0(@types/react@19.1.8)(react@19.1.0)
       '@floating-ui/dom': 1.6.13
-      '@types/react-transition-group': 4.4.12(@types/react@19.1.6)
+      '@types/react-transition-group': 4.4.12(@types/react@19.1.8)
       memoize-one: 6.0.0
       prop-types: 15.8.1
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-transition-group: 4.4.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      use-isomorphic-layout-effect: 1.2.0(@types/react@19.1.6)(react@19.1.0)
+      use-isomorphic-layout-effect: 1.2.0(@types/react@19.1.8)(react@19.1.0)
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
@@ -16398,11 +16406,11 @@ snapshots:
 
   urlpattern-polyfill@8.0.2: {}
 
-  use-isomorphic-layout-effect@1.2.0(@types/react@19.1.6)(react@19.1.0):
+  use-isomorphic-layout-effect@1.2.0(@types/react@19.1.8)(react@19.1.0):
     dependencies:
       react: 19.1.0
     optionalDependencies:
-      '@types/react': 19.1.6
+      '@types/react': 19.1.8
 
   utf8-byte-length@1.0.5: {}
 
