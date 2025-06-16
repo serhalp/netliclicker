@@ -12,8 +12,8 @@ importers:
         specifier: ^3.1.10
         version: 3.1.10(rollup@4.40.1)
       '@netlify/sdk':
-        specifier: ^2.26.2
-        version: 2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+        specifier: ^2.26.3
+        version: 2.26.3(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -270,6 +270,10 @@ packages:
 
   '@emotion/weak-memoize@0.4.0':
     resolution: {integrity: sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg==}
+
+  '@envelop/instrumentation@1.0.0':
+    resolution: {integrity: sha512-cxgkB66RQB95H3X27jlnxCRNTmPuSTgmBAq6/4n2Dtv4hsk4yz8FadA1ggmd0uZzvKqWD6CR+WFgTjhDqg7eyw==}
+    engines: {node: '>=18.0.0'}
 
   '@esbuild/aix-ppc64@0.19.11':
     resolution: {integrity: sha512-FnzU0LyE3ySQk7UntJO4+qIiQgI7KoODnZg5xzXIrFJlKd2P2gwHsHY4927xj9y5PJmJSzULiUCWmv7iWnNa7g==}
@@ -1380,6 +1384,10 @@ packages:
     resolution: {integrity: sha512-7dMjExSH4zj4ShvLem49mE3mf0K171Tx2pV4WDWhJbRUWW3SJIR2qntz0LvUGS97N5HO1SmnzrgWUhEXCsApiw==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
+  '@netlify/blobs@9.1.6':
+    resolution: {integrity: sha512-RR3t5fv7CkGVJiylOTLf/YaHPyrcWmhHW3zX3EK/9UQsnTi8jPxP7B2nyjgRjAx5S4YTzJQP+FmbQlGKdogALQ==}
+    engines: {node: ^14.16.0 || >=16.0.0}
+
   '@netlify/build-info@9.0.2':
     resolution: {integrity: sha512-2c1mTGLRYjRxhyv11CbnwkusGKtRBRQW0RXk0i72BmhtTpzNwNdNWAGh+IRaudONGO8vqvAyiDtyTUkF6QBgHg==}
     engines: {node: ^14.16.0 || >=16.0.0}
@@ -1417,8 +1425,8 @@ packages:
     resolution: {integrity: sha512-FQegi441w8KLJO+QhU3QJWa8vlYI7HfioPwBkTKOnLpImun+L/2wcVCHaPWLgyV5o6LGwGPedXxXNgWebRiI+w==}
     engines: {node: '>=16.0.0'}
 
-  '@netlify/content-engine@1.9.0':
-    resolution: {integrity: sha512-dcq0d0Ymc5ZZfrafGTfQC15Wn99WR5Z2/B4VJSrzuOO47osptsYNY/Ofr9jHJNosayzpLMGzwURzXj7E0HgUkw==}
+  '@netlify/content-engine@1.9.1':
+    resolution: {integrity: sha512-dXbNrxM/PLnLbMSLa/vWpPSpXO5NY6epqRxcF/i+96NSdNekGzgZv8A8FoUyeYVzK+Zxe+505V+c0pYHASSYXQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@google-cloud/storage': ^5.8.4
@@ -1426,6 +1434,10 @@ packages:
   '@netlify/dev-utils@2.2.0':
     resolution: {integrity: sha512-5XUvZuffe3KetyhbWwd4n2ktd7wraocCYw10tlM+/u/95iAz29GjNiuNxbCD1T6Bn1MyGc4QLVNKOWhzJkVFAw==}
     engines: {node: ^14.16.0 || >=16.0.0}
+
+  '@netlify/dev-utils@3.2.0':
+    resolution: {integrity: sha512-5QPVts2j7RHMNVPVB7E28TC564TarS2JDTfMzKGzCrAY35bvOcfJ60Hhp8DOVjI13+BJgN37srUJP4OBDIXCfg==}
+    engines: {node: ^18.14.0 || >=20}
 
   '@netlify/edge-bundler@12.4.0':
     resolution: {integrity: sha512-UESSjInC554A97VkxDnv4MZKK6Nk9JLHzuvoMfqHB0biht0J5rvXk+EcAjgfaaVJezOTQb45XMiH5lqJFVe6HQ==}
@@ -1582,22 +1594,26 @@ packages:
     resolution: {integrity: sha512-7/vIJlMYrPJPlEW84V2yeRuG3QBu66dmlv9neTmZ5nXzwylhBEOhy11ai+34A8mHCSZI4mKns25w3HM9kaDdJg==}
     engines: {node: '>=16.0.0'}
 
+  '@netlify/runtime-utils@2.1.0':
+    resolution: {integrity: sha512-z1h+wjB7IVYUsFZsuIYyNxiw5WWuylseY+eXaUDHBxNeLTlqziy+lz03QkR67CUR4Y790xGIhaHV00aOR2KAtw==}
+    engines: {node: ^18.14.0 || >=20}
+
   '@netlify/sdk--extension-api-client@0.1.1':
     resolution: {integrity: sha512-gl4K9VJg0+MLBZCAjfKvySXs1Dv5l/Y5YEXsFQZIJIgHKCmPiNOEz8SLzF7YgRNqlgIapjcBu52kif82J5HUpA==}
 
-  '@netlify/sdk--extension-api-client@2.12.4':
-    resolution: {integrity: sha512-gBHgcexRGLkqh203qhsmaQCBOvDbSV6l7t40ubiCQsI4+VZha29qkAIMnZSBYGdt7uviRAzBbHSV5Gbwe0gbKw==}
+  '@netlify/sdk--extension-api-client@2.12.5':
+    resolution: {integrity: sha512-8zpEyqh7BozBtk9Iynb+hEtkwLrFKutI2Hr9bQyL8VyBNm5lXV8eoFyKaGlvs1n2mEAz3aYvjKkWMnlLfKCDWA==}
 
   '@netlify/sdk--ui-core@1.14.0':
     resolution: {integrity: sha512-jCvgK2wGdaMr+qM8Apo8ANbDrYslF7Crk//PZObFydfHz7Vp9f0wOLlu8al97WH25NiUrJK49AaLAXa0e1IY/g==}
 
-  '@netlify/sdk--ui-functions@1.9.6':
-    resolution: {integrity: sha512-6LxJpaUQBl0eerEr74/9KxFk+zCc8s5BydMvsmtKKKYMetD3VD7QGM+eAsPJuyL3TIoswdoXN5EO818M7WAJIA==}
+  '@netlify/sdk--ui-functions@1.9.7':
+    resolution: {integrity: sha512-i0gpJdoPw9hyFqVj7gv9x6Fsi+qbKH64xdlI5nqXDkVlCtBwgskb+vqosTmBskuJEwqp3pW/SZMiiuCKWqbwSA==}
     peerDependencies:
       '@trpc/server': '>= 11 || >= 11.0.0-rc.0'
 
-  '@netlify/sdk--ui-react@1.22.2':
-    resolution: {integrity: sha512-GZjo3KftABmj3GfN9U144F6LVQ1ySZSDCWNKHpEovXgLCuphuX1v4Gtnj8yvdSf80zMoTmjAG43ZcP4OBNquEw==}
+  '@netlify/sdk--ui-react@1.22.3':
+    resolution: {integrity: sha512-0FSFmJGMgYD3PF7916111b01piI8eCXoq5ZmOXj1EuZXqg0LxTW2AcdzgtG7FGIC1P7lYZvIDUYae7kxxOXI/Q==}
     peerDependencies:
       autoprefixer: ^10.4.19
       postcss: ^8.4.38
@@ -1609,8 +1625,8 @@ packages:
     resolution: {integrity: sha512-ogDibdluTkqLtKBVWye6tzh3D9GJ3jfHe7IhnbMYc1HlNiLz7QqOrLpVyqm8pOvXW5PZfJ11JPyTcs69/yTztQ==}
     hasBin: true
 
-  '@netlify/sdk@2.26.2':
-    resolution: {integrity: sha512-jfcOA4I+HxnVif40G2gz81VazemU8kfgxjSDJPZnNOzCJxHtVRWaxZUT5uWGzKmEggCZPe0rNC1rFjOOP/o+7g==}
+  '@netlify/sdk@2.26.3':
+    resolution: {integrity: sha512-cwsf87VyeICv+GC9FpyIAgWqiaR8TWG1opyvkreRtg/mRJZIuGj5jwWiqHQTs3zjTrt5OtlpTxfcQCX01ht+Dg==}
     engines: {node: '>= 18.19.0'}
     hasBin: true
 
@@ -2421,13 +2437,29 @@ packages:
     resolution: {integrity: sha512-6uzhO2aQ757p3bSHcemA8C4pqEXuyBqyGAM7cYpO0c6/igRMV9As9XL0W12h5EPYMclgr7FgjmbVQBoWEdJ/yA==}
     engines: {node: '>=18.0.0'}
 
+  '@whatwg-node/fetch@0.10.8':
+    resolution: {integrity: sha512-Rw9z3ctmeEj8QIB9MavkNJqekiu9usBCSMZa+uuAvM0lF3v70oQVCXNppMIqaV6OTZbdaHF1M2HLow58DEw+wg==}
+    engines: {node: '>=18.0.0'}
+
   '@whatwg-node/node-fetch@0.7.18':
     resolution: {integrity: sha512-IxKdVWfZYasGiyxBcsROxq6FmDQu3MNNiOYJ/yqLKhe+Qq27IIWsK7ItbjS2M9L5aM5JxjWkIS7JDh7wnsn+CQ==}
+    engines: {node: '>=18.0.0'}
+
+  '@whatwg-node/node-fetch@0.7.21':
+    resolution: {integrity: sha512-QC16IdsEyIW7kZd77aodrMO7zAoDyyqRCTLg+qG4wqtP4JV9AA+p7/lgqMdD29XyiYdVvIdFrfI9yh7B1QvRvw==}
     engines: {node: '>=18.0.0'}
 
   '@whatwg-node/promise-helpers@1.3.1':
     resolution: {integrity: sha512-D+OwTEunoQhVHVToD80dPhfz9xgPLqJyEA3F5jCRM14A2u8tBBQVdZekqfqx6ZAfZ+POT4Hb0dn601UKMsvADw==}
     engines: {node: '>=16.0.0'}
+
+  '@whatwg-node/promise-helpers@1.3.2':
+    resolution: {integrity: sha512-Nst5JdK47VIl9UcGwtv2Rcgyn5lWtZ0/mhRQ4G8NN2isxpq2TO30iqHzmwoJycjWuyUfg3GFXqP/gFHXeV57IA==}
+    engines: {node: '>=16.0.0'}
+
+  '@whatwg-node/server@0.10.10':
+    resolution: {integrity: sha512-GwpdMgUmwIp0jGjP535YtViP/nnmETAyHpGPWPZKdX++Qht/tSLbGXgFUMSsQvEACmZAR1lAPNu2CnYL1HpBgg==}
+    engines: {node: '>=18.0.0'}
 
   '@whatwg-node/server@0.9.71':
     resolution: {integrity: sha512-ueFCcIPaMgtuYDS9u0qlUoEvj6GiSsKrwnOLPp9SshqjtcRaR1IEHRjoReq3sXNydsF5i0ZnmuYgXq9dV53t0g==}
@@ -2599,6 +2631,10 @@ packages:
     resolution: {integrity: sha512-v6MqmEpNlxF+POuyhKkidusCHWWkaLcGRURzivcU3I9tv7k4JVhFcnukrM5Rlk2rUywdZuzYAZ+kbZqWCnfN3g==}
     engines: {node: '>=8.0.0'}
     hasBin: true
+
+  ansis@4.1.0:
+    resolution: {integrity: sha512-BGcItUBWSMRgOCe+SVZJ+S7yTRG0eGt9cXAHev72yuGcY23hnLA7Bky5L/xLyPINoSN95geovfBkqoTlNZYa7w==}
+    engines: {node: '>=14'}
 
   any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
@@ -4654,6 +4690,11 @@ packages:
   image-meta@0.2.1:
     resolution: {integrity: sha512-K6acvFaelNxx8wc2VjbIzXKDVB0Khs0QT35U6NkGfTdCmjLNcO2945m7RFNR9/RPVFm48hq7QPzK8uGH18HCGw==}
 
+  image-size@2.0.2:
+    resolution: {integrity: sha512-IRqXKlaXwgSMAMtpNzZa1ZAe8m+Sa1770Dhk8VkSsP9LS+iHD62Zd8FQKs8fbPiagBE7BzoFX23cxFnwshpV6w==}
+    engines: {node: '>=16.x'}
+    hasBin: true
+
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
@@ -4982,6 +5023,12 @@ packages:
 
   joi@17.13.3:
     resolution: {integrity: sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==}
+
+  jpeg-js@0.4.4:
+    resolution: {integrity: sha512-WZzeDOEtTOBK4Mdsar0IqEU5sMr3vSV2RqkAIzUEV2BHnUfKGyswWFPFwK5EeDo93K3FohSHbLAjj0s1Wzd+dg==}
+
+  js-image-generator@1.0.4:
+    resolution: {integrity: sha512-ckb7kyVojGAnArouVR+5lBIuwU1fcrn7E/YYSd0FK7oIngAkMmRvHASLro9Zt5SQdWToaI66NybG+OGxPw/HlQ==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -7777,7 +7824,7 @@ snapshots:
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6
       convert-source-map: 2.0.0
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -7872,7 +7919,7 @@ snapshots:
       '@babel/parser': 7.27.5
       '@babel/template': 7.27.2
       '@babel/types': 7.27.6
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -8015,6 +8062,11 @@ snapshots:
   '@emotion/utils@1.4.2': {}
 
   '@emotion/weak-memoize@0.4.0': {}
+
+  '@envelop/instrumentation@1.0.0':
+    dependencies:
+      '@whatwg-node/promise-helpers': 1.3.2
+      tslib: 2.8.1
 
   '@esbuild/aix-ppc64@0.19.11':
     optional: true
@@ -8758,6 +8810,11 @@ snapshots:
       '@netlify/dev-utils': 2.2.0
       '@netlify/runtime-utils': 1.3.1
 
+  '@netlify/blobs@9.1.6':
+    dependencies:
+      '@netlify/dev-utils': 3.2.0
+      '@netlify/runtime-utils': 2.1.0
+
   '@netlify/build-info@9.0.2':
     dependencies:
       '@bugsnag/js': 7.25.0
@@ -8975,7 +9032,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@netlify/content-engine@1.9.0(@google-cloud/storage@5.20.5)':
+  '@netlify/content-engine@1.9.1(@google-cloud/storage@5.20.5)':
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/types': 7.27.6
@@ -9085,6 +9142,22 @@ snapshots:
       parse-gitignore: 2.0.0
       uuid: 11.1.0
       write-file-atomic: 6.0.0
+
+  '@netlify/dev-utils@3.2.0':
+    dependencies:
+      '@whatwg-node/server': 0.10.10
+      ansis: 4.1.0
+      chokidar: 4.0.3
+      decache: 4.6.2
+      dot-prop: 9.0.0
+      env-paths: 3.0.0
+      find-up: 7.0.0
+      image-size: 2.0.2
+      js-image-generator: 1.0.4
+      lodash.debounce: 4.0.8
+      parse-gitignore: 2.0.0
+      uuid: 11.1.0
+      write-file-atomic: 5.0.1
 
   '@netlify/edge-bundler@12.4.0(rollup@4.40.1)(supports-color@9.4.0)':
     dependencies:
@@ -9275,14 +9348,16 @@ snapshots:
 
   '@netlify/runtime-utils@1.3.1': {}
 
+  '@netlify/runtime-utils@2.1.0': {}
+
   '@netlify/sdk--extension-api-client@0.1.1':
     dependencies:
       wretch: 2.11.0
       zod: 3.24.2
 
-  '@netlify/sdk--extension-api-client@2.12.4':
+  '@netlify/sdk--extension-api-client@2.12.5':
     dependencies:
-      '@netlify/blobs': 9.1.2
+      '@netlify/blobs': 9.1.6
       camelize-ts: 3.0.0
       openapi-fetch: 0.13.5
       snakify-ts: 2.3.0
@@ -9295,10 +9370,10 @@ snapshots:
       iter-tools-es: 7.5.3
       zod: 3.24.2
 
-  '@netlify/sdk--ui-functions@1.9.6(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)':
+  '@netlify/sdk--ui-functions@1.9.7(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)':
     dependencies:
       '@netlify/functions': 3.1.10(rollup@4.40.1)
-      '@netlify/sdk--extension-api-client': 2.12.4
+      '@netlify/sdk--extension-api-client': 2.12.5
       '@trpc/server': 11.0.1(typescript@5.8.3)
       zod: 3.24.2
     transitivePeerDependencies:
@@ -9306,7 +9381,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@netlify/sdk--ui-react@1.22.2(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk--ui-react@1.22.3(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@fullstory/browser': 2.0.6
       '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.1.0))
@@ -9382,19 +9457,19 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@netlify/sdk@2.26.2(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
+  '@netlify/sdk@2.26.3(@google-cloud/storage@5.20.5)(@trpc/server@11.0.1(typescript@5.8.3))(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(graphql@16.10.0)(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.1)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@graphql-tools/stitch': 9.4.21(graphql@16.10.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
       '@graphql-tools/wrap': 10.0.34(graphql@16.10.0)
-      '@netlify/content-engine': 1.9.0(@google-cloud/storage@5.20.5)
+      '@netlify/content-engine': 1.9.1(@google-cloud/storage@5.20.5)
       '@netlify/functions': 3.1.10(rollup@4.40.1)
       '@netlify/integrations': 0.6.0
-      '@netlify/sdk--extension-api-client': 2.12.4
+      '@netlify/sdk--extension-api-client': 2.12.5
       '@netlify/sdk--ui-core': 1.14.0
-      '@netlify/sdk--ui-functions': 1.9.6(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)
-      '@netlify/sdk--ui-react': 1.22.2(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
+      '@netlify/sdk--ui-functions': 1.9.7(@trpc/server@11.0.1(typescript@5.8.3))(rollup@4.40.1)
+      '@netlify/sdk--ui-react': 1.22.3(@types/react@19.1.8)(autoprefixer@10.4.21(postcss@8.5.3))(postcss@8.5.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.3))
       '@sindresorhus/slugify': 2.2.1
       '@stackbit/dev': 1.0.35(@types/react@19.1.8)(graphql@16.10.0)
       '@types/configstore': 6.0.2
@@ -9800,7 +9875,7 @@ snapshots:
 
   '@pnpm/tabtab@0.5.4':
     dependencies:
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       enquirer: 2.4.1
       minimist: 1.2.8
       untildify: 4.0.0
@@ -10458,7 +10533,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/visitor-keys': 5.62.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.1(supports-color@9.4.0)
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.7.1
@@ -10472,7 +10547,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.32.1
       '@typescript-eslint/visitor-keys': 8.32.1
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -10546,7 +10621,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.14':
     dependencies:
-      '@babel/parser': 7.27.2
+      '@babel/parser': 7.27.5
       '@vue/shared': 3.5.14
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -10559,7 +10634,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.14':
     dependencies:
-      '@babel/parser': 7.27.2
+      '@babel/parser': 7.27.5
       '@vue/compiler-core': 3.5.14
       '@vue/compiler-dom': 3.5.14
       '@vue/compiler-ssr': 3.5.14
@@ -10586,6 +10661,11 @@ snapshots:
       '@whatwg-node/node-fetch': 0.7.18
       urlpattern-polyfill: 10.0.0
 
+  '@whatwg-node/fetch@0.10.8':
+    dependencies:
+      '@whatwg-node/node-fetch': 0.7.21
+      urlpattern-polyfill: 10.0.0
+
   '@whatwg-node/node-fetch@0.7.18':
     dependencies:
       '@fastify/busboy': 3.1.1
@@ -10593,8 +10673,27 @@ snapshots:
       '@whatwg-node/promise-helpers': 1.3.1
       tslib: 2.8.1
 
+  '@whatwg-node/node-fetch@0.7.21':
+    dependencies:
+      '@fastify/busboy': 3.1.1
+      '@whatwg-node/disposablestack': 0.0.6
+      '@whatwg-node/promise-helpers': 1.3.2
+      tslib: 2.8.1
+
   '@whatwg-node/promise-helpers@1.3.1':
     dependencies:
+      tslib: 2.8.1
+
+  '@whatwg-node/promise-helpers@1.3.2':
+    dependencies:
+      tslib: 2.8.1
+
+  '@whatwg-node/server@0.10.10':
+    dependencies:
+      '@envelop/instrumentation': 1.0.0
+      '@whatwg-node/disposablestack': 0.0.6
+      '@whatwg-node/fetch': 0.10.8
+      '@whatwg-node/promise-helpers': 1.3.2
       tslib: 2.8.1
 
   '@whatwg-node/server@0.9.71':
@@ -10693,7 +10792,7 @@ snapshots:
 
   agent-base@6.0.2(supports-color@9.4.0):
     dependencies:
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.1(supports-color@9.4.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -10766,6 +10865,8 @@ snapshots:
   ansi-to-html@0.7.2:
     dependencies:
       entities: 2.2.0
+
+  ansis@4.1.0: {}
 
   any-promise@1.3.0: {}
 
@@ -11675,15 +11776,15 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  debug@4.4.0(supports-color@9.4.0):
+  debug@4.4.0:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.1(supports-color@9.4.0):
     dependencies:
       ms: 2.1.3
     optionalDependencies:
       supports-color: 9.4.0
-
-  debug@4.4.1:
-    dependencies:
-      ms: 2.1.3
 
   decache@4.6.2:
     dependencies:
@@ -11761,7 +11862,7 @@ snapshots:
   detect-port@1.6.1:
     dependencies:
       address: 1.2.2
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -12490,7 +12591,7 @@ snapshots:
 
   extract-zip@2.0.1:
     dependencies:
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -12693,7 +12794,7 @@ snapshots:
 
   follow-redirects@1.15.9(debug@4.4.0):
     optionalDependencies:
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
 
   foreground-child@3.3.1:
     dependencies:
@@ -13230,7 +13331,7 @@ snapshots:
     dependencies:
       '@tootallnate/once': 2.0.0
       agent-base: 6.0.2(supports-color@9.4.0)
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -13284,14 +13385,14 @@ snapshots:
   https-proxy-agent@5.0.1(supports-color@9.4.0):
     dependencies:
       agent-base: 6.0.2(supports-color@9.4.0)
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.1(supports-color@9.4.0)
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.6:
     dependencies:
       agent-base: 7.1.3
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -13320,6 +13421,8 @@ snapshots:
   ignore@5.3.2: {}
 
   image-meta@0.2.1: {}
+
+  image-size@2.0.2: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -13645,6 +13748,12 @@ snapshots:
       '@sideway/address': 4.1.5
       '@sideway/formula': 3.0.1
       '@sideway/pinpoint': 2.0.0
+
+  jpeg-js@0.4.4: {}
+
+  js-image-generator@1.0.4:
+    dependencies:
+      jpeg-js: 0.4.4
 
   js-tokens@4.0.0: {}
 
@@ -14263,7 +14372,7 @@ snapshots:
   micromark@4.0.2:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
       decode-named-character-reference: 1.1.0
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
@@ -14470,7 +14579,7 @@ snapshots:
       content-type: 1.0.5
       cookie: 1.0.2
       cron-parser: 4.9.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       decache: 4.6.2
       dot-prop: 9.0.0
       dotenv: 16.4.7
@@ -15499,7 +15608,7 @@ snapshots:
 
   retry-request@4.2.2:
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.1(supports-color@9.4.0)
       extend: 3.0.2
     transitivePeerDependencies:
       - supports-color
@@ -16475,7 +16584,7 @@ snapshots:
     dependencies:
       chalk: 4.1.2
       commander: 9.5.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
